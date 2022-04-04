@@ -9,23 +9,24 @@ For more information, please see http://docs.akeneo.com/
 
 ## Requirements
 
-| CustomEntityBundle   | Akeneo PIM Community Edition |
-|:--------------------:|:----------------------------:|
-| v5.0.*               | v5.0.*                       |
-| v4.0.*               | v4.0.*                       |
-| v3.0.*               | v3.0.*                       |
-| v2.4.*               | v2.3.*                       |
-| v2.3.*               | v2.2.*                       |
-| v2.2.*               | v2.1.*                       |
-| v2.1.*               | v2.1.*                       |
-| v2.0.*               | v2.0.*                       |
-| v1.10.*              | v1.7.*                       |
+| CustomEntityBundle | Akeneo PIM Community Edition |
+|:------------------:|:----------------------------:|
+|       v6.0.*       |            v6.0.*            |
+|       v5.0.*       |            v5.0.*            |
+|       v4.0.*       |            v4.0.*            |
+|       v3.0.*       |            v3.0.*            |
+|       v2.4.*       |            v2.3.*            |
+|       v2.3.*       |            v2.2.*            |
+|       v2.2.*       |            v2.1.*            |
+|       v2.1.*       |            v2.1.*            |
+|       v2.0.*       |            v2.0.*            |
+|      v1.10.*       |            v1.7.*            |
 
 ## Installation
 You can install this bundle with composer (see requirements section):
 
 ```bash
-    php composer.phar require "akeneo-labs/custom-entity-bundle":"5.0.*"
+    php composer.phar require "akeneo-labs/custom-entity-bundle":"6.0.*"
 ```
 
 Then add the following lines **at the end** of your config/routes/routes.yml :
