@@ -78,8 +78,8 @@ class ConfigurationBuilderPass implements CompilerPassInterface
         $serviceName = sprintf('pim_custom_entity.configuration.%s', $name);
         $container->addDefinitions([$serviceName => $definition]);
         $container->getDefinition('pim_custom_entity.configuration.registry')
-            ->setPublic(true)
-            ->addMethodCall('add', [$name, $serviceName]);
+                  ->setPublic(true)
+                  ->addMethodCall('add', [$name, $serviceName]);
     }
 
     /**
@@ -143,27 +143,27 @@ class ConfigurationBuilderPass implements CompilerPassInterface
      */
     protected function getConfigTree()
     {
-        $treeBuilder = new TreeBuilder();
-        $root = $treeBuilder->root('custom_entities');
+        $treeBuilder = new TreeBuilder('custom_entities');
+        $root = $treeBuilder->getRootNode();
         $root
             ->useAttributeAsKey('name')
             ->prototype('array')
-                ->addDefaultsIfNotSet()
-                ->children()
-                    ->scalarNode('name')->end()
-                    ->scalarNode('class')->defaultNull()->end()
-                    ->scalarNode('entity_class')->defaultNull()->end()
-                    ->scalarNode('extends')->defaultValue('default')->end()
-                    ->arrayNode('options')
-                        ->prototype('variable')
-                        ->end()
-                    ->end()
-                    ->booleanNode('abstract')->defaultFalse()->end()
-                    ->arrayNode('actions')
-                        ->prototype('variable')
-                        ->end()
-                    ->end()
-                ->end()
+            ->addDefaultsIfNotSet()
+            ->children()
+            ->scalarNode('name')->end()
+            ->scalarNode('class')->defaultNull()->end()
+            ->scalarNode('entity_class')->defaultNull()->end()
+            ->scalarNode('extends')->defaultValue('default')->end()
+            ->arrayNode('options')
+            ->prototype('variable')
+            ->end()
+            ->end()
+            ->booleanNode('abstract')->defaultFalse()->end()
+            ->arrayNode('actions')
+            ->prototype('variable')
+            ->end()
+            ->end()
+            ->end()
             ->end();
 
         return $treeBuilder->buildTree();
