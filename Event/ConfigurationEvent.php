@@ -3,7 +3,7 @@
 namespace Pim\Bundle\CustomEntityBundle\Event;
 
 use Pim\Bundle\CustomEntityBundle\Configuration\ConfigurationInterface;
-use Symfony\Component\EventDispatcher\Event;
+use Symfony\Contracts\EventDispatcher\Event;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 
 /**
