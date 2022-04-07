@@ -4,6 +4,9 @@ pim_customentity_rest_list:
         _controller: pim_custom_entity.rest_controller:listAction
     methods: [GET]
 
+pim_customentity_default:
+    path: /default
+
 pim_customentity_index:
     path: /{customEntityName}
 

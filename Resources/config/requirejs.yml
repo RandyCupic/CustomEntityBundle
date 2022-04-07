@@ -8,6 +8,7 @@ config:
         custom_entity/form/common/save-form: pimcustomentity/js/form/common/save-form
         custom_entity/form/common/delete: pimcustomentity/js/form/common/delete
         custom_entity/form/common/label: pimcustomentity/js/form/common/label
+        custom_entity/controller/default: pimcustomentity/js/controller/custom_entity-default
         custom_entity/controller/list: pimcustomentity/js/controller/custom_entity-list
         custom_entity/controller/edit: pimcustomentity/js/controller/custom_entity-edit
         custom_entity/fetcher: pimcustomentity/js/fetcher/custom_entity-fetcher
@@ -26,6 +27,8 @@ config:
 
         pim/controller-registry:
             controllers:
+                pim_customentity_default:
+                    module: custom_entity/controller/default
                 pim_customentity_index:
                     module: custom_entity/controller/list
                 pim_customentity_rest_get:

@@ -8,6 +8,7 @@ extensions:
             title: pim_menu.tab.reference_data
             iconModifier: iconSettings
             icon: EntityIcon
+            to: pim_customentity_default
 
     pim-menu-reference_data-column:
         module: pim/menu/column
