@@ -56,11 +56,15 @@ pim_enrich:
                 properties:
                     label: Nom
         job_instance:
+            file_path: Chemin
             button:
                 edit:
                     title: Modifier
                 export:
                     title: Exporter maintenant
+                import:
+                    launch: Importer maintenant
+                    upload_file: Déposer un fichier
             tab:
                 properties:
                     title: Propriétés
@@ -78,6 +82,9 @@ pim_enrich:
                         title: Caractère d'encadrement
                     with_header:
                         title: Avec en-tête
+                    upload_allowed:
+                        title: Autoriser l'envoi de fichiers sur le serveur
+                        help: Autoriser à sélectionner puis envoyer le fichier sur le serveur directement
                 history:
                     title: Historique
                     

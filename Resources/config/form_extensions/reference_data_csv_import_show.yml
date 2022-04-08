@@ -7,7 +7,7 @@ extensions:
         parent: reference-data-job-instance-csv-import-show
         targetZone: main-image
         config:
-            path: bundles/pimui/images/illustration-import-xlsx.svg
+            path: bundles/pimui/images/illustrations/ImportCSV.svg
 
     reference-data-job-instance-csv-import-show-user-navigation:
         module: pim/menu/user-navigation
@@ -82,23 +82,6 @@ extensions:
             identifier:
                 path: code
                 name: code
-
-    reference-data-job-instance-csv-import-show-subsection:
-        module: pim/form/common/subsection
-        parent: reference-data-job-instance-csv-import-show
-        targetZone: content
-        config:
-            title: pim_enrich.form.job_instance.subsection.last_executions
-
-    reference-data-job-instance-csv-import-show-grid:
-        module: pim/job/common/grid
-        parent: reference-data-job-instance-csv-import-show-subsection
-        position: 1000
-        targetZone: content
-        config:
-            alias: last-import-executions-grid
-            metadata:
-                jobType: import
 
     reference-data-job-instance-csv-import-show-label:
         module: pim/job/common/edit/label
