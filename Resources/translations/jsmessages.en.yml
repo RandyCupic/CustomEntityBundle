@@ -31,10 +31,6 @@ pim_custom_entity:
         help: The reference data name you want to import
         no_reference_data: No reference data availables
 
-pim_enrich:
-    form.attribute.tab.properties.label:
-        name: Name
-
 page_title:
     pim_customentity_index: 'Reference data - Overview'
     pim_customentity_rest_create: 'Reference data - Create'
@@ -53,3 +49,35 @@ batch_jobs:
 
     csv_reference_data_quick_export:
         label: Reference data CSV quick export
+
+pim_enrich:
+    form:
+        attribute:
+            tab:
+                properties:
+                    label: Name
+        job_instance:
+            button:
+                edit:
+                    title: Update
+                export:
+                    title: Export now
+            tab:
+                properties:
+                    title: Properties
+                    code:
+                        title: Code
+                    label:
+                        title: Label
+                    file_path:
+                        title: File path
+                        help: File path on server
+                    delimiter:
+                        title: Delimiter
+                        help: Delimiter for columns
+                    enclosure:
+                        title: Enclosure
+                    with_header:
+                        title: With header
+                history:
+                    title: History

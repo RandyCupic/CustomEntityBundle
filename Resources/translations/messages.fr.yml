@@ -6,8 +6,30 @@ pane.accordion:
 pim_custom_entity:
     export:
         limit_exceeded: Merci de sélectionner moins de %limit% enregistrements
+        csv.entity_name:
+            label: Nom du référentiel
+            help: Le type de référentiel que vous souhaitez exporter
+    import.csv.entity_name:
+        label: Nom du référentiel
+        help: Le type de référentiel que vous souhaitez importer
+    acl_group.reference_data: Référentiel
 
 properties:
     title: Propriétés
 
 pim_custom_entity.acl_group.reference_data: Référentiel
+
+batch_jobs:
+    csv_reference_data_import:
+        validation.label: Validation
+        import.label: Import référentiels
+        label: Import référentiels en CSV
+
+    csv_reference_data_export:
+        export.label: Export référentiels
+        label: Export référentiels en CSV
+
+    csv_reference_data_quick_export:
+        quick_export.label: Export rapide référentiels en CSV
+        label: Export rapide référentiels en CSV
+

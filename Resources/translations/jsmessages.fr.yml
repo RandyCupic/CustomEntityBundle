@@ -1,5 +1,26 @@
-pim_menu.tab.reference_data: Référentiels
+pim_menu:
+    tab.reference_data: Référentiels
+    item.reference_data: Référentiels
+    navigation.reference_data: Référentiels
 pim_custom_entity:
+    index_title: Vue globale
+    create_popin.title: Créer
+    form:
+        field.label.code: Code
+        tab:
+            history.title: Historique
+            properties:
+                title: Propriétés
+                section:
+                    common: Commun
+                    label_translations: Libellés
+    button:
+        create: Créer
+    message:
+        created: Entité créée avec succès
+        removed: Entité supprimée avec succès
+    error:
+        removing: L'entité ne peut pas être supprimée
     export.csv.entity_name:
         label: Nom de la reference data
         help: La reference data que vous voulez exporter
@@ -8,3 +29,55 @@ pim_custom_entity:
         label: Nom de la reference data
         help: La reference data que vous voulez importer
         no_reference_data: Il n'y a pas de référence data disponible
+
+page_title:
+    pim_customentity_index: 'Référentiels - Vue globale'
+    pim_customentity_rest_create: 'Référentiels - Créer'
+    pim_customentity_massedit: 'Référentiels'
+    pim_customentity_quickexport: 'Référentiels'
+    pim_customentity_rest_delete: 'Référentiels'
+    pim_customentity_rest_list: 'Référentiels'
+    pim_customentity_rest_get: 'Référentiels | Editer'
+
+batch_jobs:
+    csv_reference_data_import:
+        label: Référentiels en CSV
+
+    csv_reference_data_export:
+        label: Référentiels en CSV
+
+    csv_reference_data_quick_export:
+        label: Export rapide des référentiels en CSV
+
+pim_enrich:
+    form:
+        attribute:
+            tab:
+                properties:
+                    label: Nom
+        job_instance:
+            button:
+                edit:
+                    title: Modifier
+                export:
+                    title: Exporter maintenant
+            tab:
+                properties:
+                    title: Propriétés
+                    code:
+                        title: Code
+                    label:
+                        title: Libellé
+                    file_path:
+                        title: Chemin du fichier
+                        help: Chemin sur le serveur
+                    delimiter:
+                        title: Délimiteur
+                        help: Délimiteur pour les colonnes
+                    enclosure:
+                        title: Caractère d'encadrement
+                    with_header:
+                        title: Avec en-tête
+                history:
+                    title: Historique
+                    
