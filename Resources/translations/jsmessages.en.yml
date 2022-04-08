@@ -66,6 +66,7 @@ pim_enrich:
                 import:
                     launch: Import now
                     upload_file: Upload file
+                    upload: Upload
             tab:
                 properties:
                     title: Properties

@@ -65,6 +65,7 @@ pim_enrich:
                 import:
                     launch: Importer maintenant
                     upload_file: Déposer un fichier
+                    upload: Importer
             tab:
                 properties:
                     title: Propriétés
