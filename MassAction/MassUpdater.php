@@ -2,7 +2,7 @@
 
 namespace Pim\Bundle\CustomEntityBundle\MassAction;
 
-use Symfony\Bridge\Doctrine\RegistryInterface;
+use Doctrine\Bundle\DoctrineBundle\Registry;
 
 /**
  * Mass action updater
@@ -14,16 +14,16 @@ use Symfony\Bridge\Doctrine\RegistryInterface;
 class MassUpdater
 {
     /**
-     * @var RegistryInterface
+     * @var \Doctrine\Bundle\DoctrineBundle\Registry
      */
     protected $doctrine;
 
     /**
      * Constructor
      *
-     * @param RegistryInterface $doctrine
+     * @param \Doctrine\Bundle\DoctrineBundle\Registry $doctrine
      */
-    public function __construct(RegistryInterface $doctrine)
+    public function __construct(Registry $doctrine)
     {
         $this->doctrine = $doctrine;
     }

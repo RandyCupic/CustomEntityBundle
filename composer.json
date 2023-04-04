@@ -16,7 +16,7 @@
         "akeneo/pim-community-dev": "^7.0.0"
     },
     "require-dev": {
-        "phpspec/phpspec": "^5.0",
+        "phpspec/phpspec": "^7.0",
         "friendsofphp/php-cs-fixer": "^2.14.0"
     },
     "autoload": {
@@ -24,5 +24,8 @@
             "Pim\\Bundle\\CustomEntityBundle\\": "",
             "Acme\\Bundle\\CustomBundle\\": "docs/examples/CustomBundle"
         }
+    },
+    "config": {
+        "allow-plugins": false
     }
 }
